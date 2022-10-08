@@ -34,7 +34,7 @@ pipeline {
             steps {
 
                 script {
-                    buildBadge.setStatus('pending-results')
+                    buildBadge.setStatus('running')
                     try {
                         RunBuild()
                         // buildBadge.setStatus('passing')
@@ -60,7 +60,7 @@ pipeline {
             steps {
 
                 script {
-                    buildBadge.setStatus('pending-results')
+                    buildBadge.setStatus('running')
                     try {
                         RunTest()
                         buildBadge.setStatus('passing')
